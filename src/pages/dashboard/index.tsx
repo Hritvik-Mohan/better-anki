@@ -1,4 +1,4 @@
-import Decks from '@/components/dashboard_components/Decks';
+import Decks from '@/components/dashboard_components/decks';
 import Main from '@/components/dashboard_components/main'
 import Navbar from '@/components/dashboard_components/navbar'
 import Settings from '@/components/dashboard_components/settings';
