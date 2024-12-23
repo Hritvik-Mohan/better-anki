@@ -20,7 +20,7 @@ export default function Dashboard() {
         <div className='w-[20%] h-screen bg-[rgba(249,249,249,1)] border-r border-[rgba(244,244,244,1)]'>
             <Sidebar onChangeSection={setActiveSection}/>
         </div>
-        <div className='w-screen'>
+        <div className='w-[80%]'>
             <Navbar/>
             {sections[activeSection]}
         </div>
