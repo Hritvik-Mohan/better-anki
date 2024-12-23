@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import React from 'react'
 import { FcMindMap } from "react-icons/fc";
 import { IoChevronBack } from "react-icons/io5";
@@ -26,7 +25,7 @@ export default function Login() {
         </div>
         <div className="flex justify-center my-4 h-[2px] rounded-lg bg-[rgba(243,243,243,1)]"></div>
         <div className='flex justify-between mt-4 items-center'>
-          <Link href="/signup" className='text-gray-500'>Don't have an account yet?</Link> <button className='bg-[rgba(218,224,248,1)] text-[rgba(77,110,213,1)] py-4 px-4 rounded-lg font-medium'>Create Account</button>
+          <Link href="/signup" className='text-gray-500'>Don&apos;t have an account yet?</Link> <button className='bg-[rgba(218,224,248,1)] text-[rgba(77,110,213,1)] py-4 px-4 rounded-lg font-medium'>Create Account</button>
         </div>
       </div>
     </div>

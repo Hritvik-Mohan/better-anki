@@ -8,7 +8,7 @@ import Link from "next/link";
 
 interface SidebarProps {
   onChangeSection: (
-    sections: "myDashboard" | "myDecks" | "mySettings" | "logout"
+    sections: "myDashboard" | "myDecks" | "mySettings"
   ) => void;
 }
 
@@ -55,7 +55,6 @@ export default function Sidebar({ onChangeSection }: SidebarProps) {
               Settings
             </button>
             <button
-              onClick={() => onChangeSection("logout")}
               className="hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
             >
               <Link href="/" className="flex items-center gap-1">
