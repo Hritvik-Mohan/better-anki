@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Settings() {
   return (
-    <div className='p-6 text-[2.5rem]'>
+    <div className='p-6 text-[2.5rem] mb-4'>
         Settings
     </div>
   )

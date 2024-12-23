@@ -17,7 +17,7 @@ export default function Dashboard() {
     }
   return (
     <div className='flex'>
-        <div className='w-[28%] h-screen bg-[rgba(249,249,249,1)] border-r border-[rgba(244,244,244,1)]'>
+        <div className='w-[20%] h-screen bg-[rgba(249,249,249,1)] border-r border-[rgba(244,244,244,1)]'>
             <Sidebar onChangeSection={setActiveSection}/>
         </div>
         <div className='w-screen'>
