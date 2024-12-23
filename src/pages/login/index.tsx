@@ -7,7 +7,7 @@ export default function Login() {
 
   return (
     <div className='flex bg-[rgba(228,228,228,1)] w-full h-screen items-center justify-center'>
-      <div className='bg-white max-w-[600px] rounded-lg px-8 pt-8 pb-12 mb-[8rem]'>
+      <div className='bg-white max-w-[600px] rounded-lg px-8 pt-8 pb-12 mb-[8rem] mt-[4rem]'>
       <Link href='/' className='flex items-center text-[rgba(77,110,213,1)]'>
         <IoChevronBack /><p>home</p>
       </Link>
