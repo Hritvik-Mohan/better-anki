@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-import { Modal } from "antd";
+import React from "react";
 import DeckCard from "./deck_card";
 
 export default function Decks() {
-  const [open, setOpen] = useState(false);
-  const [selectedDeck, setSelectedDeck] = useState<{
-    id: number;
-    title: string;
-    description: string;
-    cardCount: number;
-  } | null>(null);
+
+  // const [selectedDeck, setSelectedDeck] = useState<{
+  //   id: number;
+  //   title: string;
+  //   description: string;
+  //   cardCount: number;
+  // } | null>(null);
 
   const decks = [
     {
@@ -22,13 +21,13 @@ export default function Decks() {
     { id: 3, title: "Deck 3", description: "React Hooks", cardCount: 30 },
   ];
 
-  const handleDeckClick = (deck: typeof decks[0]) => {
-    console.log(deck);
-    setSelectedDeck(deck);
-    setOpen(true);
-  }
+  // const handleDeckClick = (deck: typeof decks[0]) => {
+  //   console.log(deck);
+  //   setSelectedDeck(deck);
+  //   setOpen(true);
+  // }
 
-  console.log(selectedDeck);
+  // console.log(selectedDeck);
 
   return (
     <div className="p-6">
@@ -37,30 +36,12 @@ export default function Decks() {
         {decks.map((deck) => (
           <DeckCard
             key={deck.id}
-            onClick={() => handleDeckClick(deck)}
-            // deckModal={setOpen}
-            // deckId={deck.id}
             deckTitle={deck.title}
             deckDescription={deck.description}
             cardCount={deck.cardCount}
           />
         ))}
       </div>
-      <Modal
-        title={selectedDeck ? selectedDeck.title : "Deck Details"}
-        centered
-        open={open}
-        onOk={() => setOpen(false)}
-        onCancel={() => setOpen(false)}
-        // width={1000}
-      >
-        {selectedDeck && (
-          <div>
-            <p><strong>Description: </strong>{selectedDeck.description}</p>
-            <p><strong>Number of Cards: </strong>{selectedDeck.cardCount}</p>
-          </div>
-        )}
-      </Modal>
     </div>
   );
 }

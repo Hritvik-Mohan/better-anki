@@ -15,10 +15,12 @@ export default function Navbar() {
             placeholder="Search decks, cards, tags.."
           />
         </div>
-        <button className="flex items-center justify-center min-w-[6rem] max-w-[6rem] bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] w-[15%] p-4 rounded-lg font-semibold">
-          <IoIosAdd size="2rem" />
-          New
-        </button>
+        <div>
+          <button className="flex items-center justify-center min-w-[6rem] max-w-[6rem] bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] w-[15%] p-4 rounded-lg font-semibold">
+            <IoIosAdd size="2rem" />
+            New
+          </button>
+        </div>
       </div>
       <div className="flex justify-center my-4 mx-6 h-[2px] rounded-lg bg-[rgba(243,243,243,1)]"></div>
     </div>

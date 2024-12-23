@@ -4,7 +4,7 @@ import { PiCardsThreeFill } from "react-icons/pi";
 import { IoMdSettings } from "react-icons/io";
 import { TbLogout2 } from "react-icons/tb";
 import { FcMindMap } from "react-icons/fc";
-import { IoIosArrowRoundBack } from "react-icons/io";
+// import { IoIosArrowRoundBack } from "react-icons/io";
 import Link from "next/link";
 
 interface SidebarProps {
@@ -27,7 +27,7 @@ export default function Sidebar({ onChangeSection }: SidebarProps) {
           </h1>
         </Link>
         <div className="mt-6 mr-6 font-bold">
-        <IoIosArrowRoundBack size="1.5rem"/>
+        {/* <IoIosArrowRoundBack size="1.5rem"/> */}
         </div>
       </div>
       <div className="w-[100px] bg-[rgba(218,224,248,1)] h-[100px] rounded-full m-8 border-4 border-solid border-white flex items-center justify-center text-center text-[3rem] text-[rgba(77,110,213,1)]">
