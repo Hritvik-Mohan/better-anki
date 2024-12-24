@@ -1,8 +1,16 @@
 import React from "react";
 import { IoSearch } from "react-icons/io5";
 import { IoIosAdd } from "react-icons/io";
+import { FaGripHorizontal } from "react-icons/fa";
+import { LuStretchHorizontal } from "react-icons/lu";
+import { useLayoutContext } from "@/context/LayoutContext";
 
 export default function Navbar() {
+  const {isGridLayout, toggleLayout} = useLayoutContext();
+  // const handleLayout = () => {
+  //   if (isGridLayout == true) setIsGridLayout(false);
+  //     else setIsGridLayout(true);
+  // }
   return (
     <div>
       <div className="p-4 flex justify-evenly gap-[1rem]">
@@ -14,6 +22,17 @@ export default function Navbar() {
             className="bg-[rgba(243,243,243,1)] w-[85%] p-4 outline-none"
             placeholder="Search decks, cards, tags.."
           />
+        </div>
+        <div className="flex items-center" onClick={toggleLayout}>
+          {isGridLayout ? (
+            <button>
+              <FaGripHorizontal size="1.5rem" />
+            </button>
+          ) : (
+            <button>
+              <LuStretchHorizontal size="1.5rem" />
+            </button>
+          )}
         </div>
         <div>
           <button className="flex items-center justify-center min-w-[6rem] max-w-[6rem] bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] w-[15%] p-4 rounded-lg font-semibold">

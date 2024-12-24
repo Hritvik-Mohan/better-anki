@@ -19,10 +19,10 @@ export default function Sidebar({ onChangeSection }: SidebarProps) {
       <div className="flex items-center justify-between">
         <Link href="/">
           <h1 className="flex items-center ml-4 mt-6">
-            <span className="font-bold">Better</span>
-            <span>Anki</span>
+            <span className="font-bold text-[1.2rem]">Better</span>
+            <span className="text-[1.2rem]">Anki</span>
             <span className="ml-2">
-              <FcMindMap size="1.5rem" />
+              <FcMindMap size="1.8rem" />
             </span>
           </h1>
         </Link>
