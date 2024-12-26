@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import DeckModal from "./deckModal";
+import DeckModal from "./DeckModal";
 import { useLayoutContext } from "@/context/LayoutContext";
 
 interface DeckCardProps {
@@ -32,13 +32,13 @@ const DeckCard: React.FC<DeckCardProps> = ({
       <div
         className={
           isGridLayout
-            ? "flex flex-wrap bg-[rgba(201,211,252)] p-4 rounded-lg items-center justify-between text-gray-600 h-full"
-            : "flex flex-wrap bg-[rgba(201,211,252)] p-4 rounded-lg items-center justify-between text-gray-600"
+            ? "flex flex-wrap bg-[rgba(201,211,252)] p-5 rounded-lg justify-between text-gray-600 h-full"
+            : "flex bg-[rgba(201,211,252)] p-4 rounded-lg items-center justify-between text-gray-600"
         }
         onClick={handleOpenDeck}
       >
-        <div className={isGridLayout ? "pl-4" : "pl-4 pt-4"}>
-          <div className="text-black">
+        <div className={isGridLayout ? "" : "pl-4 pt-4 pb-4"}>
+          <div className="text-black text-[1.5rem]">
             {deckTitle}
           </div>
           <div className="flex flex-wrap text-ellipsis">{deckDescription}</div>
