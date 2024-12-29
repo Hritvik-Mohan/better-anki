@@ -64,7 +64,7 @@ export default function Home() {
         <section className="mt-[4rem]">
           <div className="my-[2rem]text-gray-800 font-semibold text-[2rem] sm:text-[2.5rem] md:text-[3rem] xl:text[3.5rem] 2xl:text-[4rem]">Why Better Anki?</div>
           <p className="mb-[2rem] font-normal text-gray-800 text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] xl:text[1.75rem] 2xl:text-[2rem]">
-          Better Anki was built for students, professionals, and lifelong learners who want to optimize their study process. Whether you're learning a new language, preparing for exams, or mastering a skill, Better Anki is here to make it easier.
+          Better Anki was built for students, professionals, and lifelong learners who want to optimize their study process. Whether you&apos;re learning a new language, preparing for exams, or mastering a skill, Better Anki is here to make it easier.
           </p>
         </section>
         <div className="">
