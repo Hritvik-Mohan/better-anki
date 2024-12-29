@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import DeckModal from "./DeckModal";
 import { useLayoutContext } from "@/context/LayoutContext";
+import DeckModal from "./DeckModal";
 
 interface DeckCardProps {
   deckTitle: string;
