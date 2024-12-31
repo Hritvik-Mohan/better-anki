@@ -1,4 +1,5 @@
 import Navbar from "@/components/landing_page_components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,14 +17,14 @@ export default function Home() {
           <span className="bg-green-500 text-white">retention</span> and make
           studying fun.
         </p>
-        <div className="">
+        <Link href="/dashboard">
           <button
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-semibold rounded-lg text-[1rem] xl:text[1.5rem] 2xl:text-[2rem] px-5 py-2.5 my-[2rem] dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             Get Started for Free
           </button>
-        </div>
+        </Link>
         <section className="mt-[4rem]">
           <div className="my-[2rem]text-gray-800 font-semibold text-[2rem] sm:text-[2.5rem] md:text-[3rem] xl:text[3.5rem] 2xl:text-[4rem]">Intelligent Spaced Repetition</div>
           <p className="mb-[2rem] font-normal text-gray-800 text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] xl:text[1.75rem] 2xl:text-[2rem]">
@@ -67,14 +68,14 @@ export default function Home() {
           Better Anki was built for students, professionals, and lifelong learners who want to optimize their study process. Whether you&apos;re learning a new language, preparing for exams, or mastering a skill, Better Anki is here to make it easier.
           </p>
         </section>
-        <div className="">
+        <Link href="/dashboard">
           <button
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-semibold rounded-lg text-[1rem] xl:text[1.5rem] 2xl:text-[2rem] px-5 py-2.5 my-[2rem] dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             Get Started for Free
           </button>
-        </div>
+        </Link>
         <section className="mb-[10rem]">
         </section>
       </div>
