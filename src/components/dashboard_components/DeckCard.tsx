@@ -25,28 +25,28 @@ const DeckCard: React.FC<DeckCardProps> = ({
     <div
       className={
         isGridLayout
-          ? "flex flex-col gap-4 aspect-square"
+          ? "flex flex-col gap-4 aspect-auto"
           : "flex flex-col gap-4"
       }
     >
       <div
         className={
           isGridLayout
-            ? "flex flex-wrap bg-[rgba(201,211,252)] p-5 rounded-lg justify-between text-gray-600 h-full"
-            : "flex bg-[rgba(201,211,252)] p-4 rounded-lg items-center justify-between text-gray-600"
+            ? "flex flex-wrap border border-solid hover:bg-[#edf1ff] p-5 rounded-lg justify-between text-gray-600 h-full w-full overflow-auto"
+            : "flex border border-solid hover:bg-[#edf1ff] p-4 rounded-lg items-center justify-between text-gray-600"
         }
         onClick={handleOpenDeck}
       >
-        <div className={isGridLayout ? "" : "pl-4 pt-4 pb-4"}>
-          <div className="text-black text-[1.5rem]">
+        <div className={isGridLayout ? "" : "w-full pl-4 pt-4 pb-4"}>
+          <div className="text-black pb-4 text-[1rem] font-medium sm:text-[1rem] md:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[2rem] 2xl:font-normal overflow-hidden">
             {deckTitle}
           </div>
-          <div className="flex flex-wrap text-ellipsis">{deckDescription}</div>
+          <div className="flex overflow-hidden text-ellipsis">{deckDescription}</div>
         </div>
-        <div className={isGridLayout ? "flex w-full items-center gap-8 justify-between mt-4 pl-4": "flex w-full items-center gap-8 justify-end mt-4 pl-4"}>
+        <div className={isGridLayout ? "flex flex-wrap w-full items-end gap-8 justify-between mt-4": "flex w-full items-center gap-8 justify-end mt-4 pl-4"}>
           <div className="text-[1rem]">{cardCount} Cards</div>
           {/* <div className="w-[2px] py-6 bg-gray-400 rounded-lg"></div> */}
-          <div className="pr-4">
+          <div className={isGridLayout ? "" : "pr-4"}>
             <BsThreeDotsVertical />
           </div>
         </div>

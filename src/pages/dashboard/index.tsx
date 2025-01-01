@@ -42,7 +42,7 @@ export default function Dashboard() {
           defaultSize={20}
           minSize={12}
           maxSize={25}
-          className={`min-h-screen ${isGridLayout ? "w-[20%]" : "w-[20%]"} bg-[rgba(249,249,249,1)] border-r-[3px] border-[rgba(244,244,244,1)]`}
+          className={`min-h-screen ${isGridLayout ? "w-[20%]" : "w-[20%]"} bg-[#fcfcfc] border-r-[3px] border-[rgba(244,244,244,1)]`}
         >
           <Sidebar onChangeSection={setActiveSection} />
         </Panel>
