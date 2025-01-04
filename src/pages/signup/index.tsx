@@ -5,6 +5,7 @@ import { IoChevronBack } from "react-icons/io5";
 
 export default function Signup() {
 
+
   return (
     <div className='flex bg-[rgba(228,228,228,1)] w-full h-screen items-center justify-center'>
       <div className='bg-white max-w-[600px] rounded-lg px-8 pt-8 pb-12 mb-[8rem]'>
