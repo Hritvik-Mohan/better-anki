@@ -1,14 +1,38 @@
 import React from "react";
-import Decks from "./Decks";
+import HeatMap from "./headmap/HeatMap";
+import decksData from "@/utils/decksData";
+import DeckCard from "./DeckCard";
+import { useLayoutContext } from "@/context/LayoutContext";
 
 export default function Main() {
+  const { isGridLayout } = useLayoutContext();
   return (
     <div className="p-6">
       <div className="text-[2.5rem] mb-4">Dashboard</div>
       <div className="p-6">
-        <div className="text-[2rem] font-thin">Decks</div>
+        <div className="text-[2rem] font-thin">Activity</div>
         <div className="flex justify-center my-4 h-[2px] rounded-lg bg-[rgba(243,243,243,1)]"></div>
-        <Decks />
+        <HeatMap />
+      </div>
+      <div className="p-6">
+        <div className="text-[2rem] font-thin">Current working decks</div>
+        <div className="flex justify-center my-4 h-[2px] rounded-lg bg-[rgba(243,243,243,1)]"></div>
+        <div
+          className={`transition-all duration-500 ease-in-out ${
+            isGridLayout
+              ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+              : "flex flex-col gap-4"
+          }`}
+        >
+          {decksData.slice(0, 4).map((deck) => (
+            <DeckCard
+              key={deck.id}
+              deckTitle={deck.title}
+              deckDescription={deck.description}
+              cardCount={deck.cardCount}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

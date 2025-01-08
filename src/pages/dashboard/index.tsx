@@ -14,7 +14,7 @@ import useIsMobile from "@/utils/useIsMobile";
 export default function Dashboard() {
   type SectionKey = "myDashboard" | "myDecks" | "mySettings";
 
-  const [activeSection, setActiveSection] = useState<SectionKey>("myDecks");
+  const [activeSection, setActiveSection] = useState<SectionKey>("myDashboard");
   const [isLoaded, setIsLoaded] = useState(false);
 
   const isMobile = useIsMobile();
