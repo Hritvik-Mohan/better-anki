@@ -6,6 +6,7 @@ import { TbLogout2 } from "react-icons/tb";
 import { FcMindMap } from "react-icons/fc";
 // import { IoIosArrowRoundBack } from "react-icons/io";
 import Link from "next/link";
+import useIsMobile from "@/utils/useIsMobile";
 
 interface SidebarProps {
   onChangeSection: (
@@ -14,8 +15,9 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ onChangeSection }: SidebarProps) {
+  const isMobile = useIsMobile();
   return (
-    <div className="pl-2 pb-8">
+    <div className={!isMobile ? "fixed pl-2 pb-8" : "pl-2 pb-8"}>
       <div className="flex items-center justify-between">
         <Link href="/">
           <h1 className="flex items-center ml-4 mt-6">

@@ -67,8 +67,8 @@ const DeckCard: React.FC<DeckCardProps> = ({
               <DropdownMenuContent>
                 {/* <DropdownMenuLabel className="text-[16px]">My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator/> */}
-                <DropdownMenuItem className="text-[16px]">Start session</DropdownMenuItem>
-                <DropdownMenuItem className="text-[16px]">Start </DropdownMenuItem>
+                <DropdownMenuItem className="text-[16px]">Start a study session</DropdownMenuItem>
+                <DropdownMenuItem className="text-[16px]">View </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>

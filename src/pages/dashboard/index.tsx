@@ -9,24 +9,7 @@ import { useLayoutContext } from "@/context/LayoutContext";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { CgMenuGridO } from "react-icons/cg";
 import { Card } from "@/components/ui/card";
-
-const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  // const [open, setOpen] = React.useState(false);
-
-  useEffect(() => {
-    // Check if window exists
-    const mediaQuery = window.matchMedia("(max-width: 965px)");
-    setIsMobile(mediaQuery.matches);
-
-    const handleChange = () => setIsMobile(mediaQuery.matches);
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => window.removeEventListener("resize", handleChange);
-  }, []);
-
-  return isMobile;
-};
+import useIsMobile from "@/utils/useIsMobile";
 
 export default function Dashboard() {
   type SectionKey = "myDashboard" | "myDecks" | "mySettings";
