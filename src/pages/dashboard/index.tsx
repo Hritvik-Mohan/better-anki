@@ -54,7 +54,7 @@ export default function Dashboard() {
           <Navbar />
           <Drawer>
             <DrawerTrigger asChild className="">
-              <Card className="fixed bottom-4 right-8 bottom-8 p-4 bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] rounded-full"><CgMenuGridO size={28}/></Card>
+              <Card className="fixed right-8 bottom-8 p-4 bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] rounded-full"><CgMenuGridO size={28}/></Card>
             </DrawerTrigger>
             <DrawerContent>
             <Sidebar onChangeSection={setActiveSection} />
