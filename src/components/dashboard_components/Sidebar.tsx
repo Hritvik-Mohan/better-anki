@@ -15,7 +15,7 @@ interface SidebarProps {
 
 export default function Sidebar({ onChangeSection }: SidebarProps) {
   return (
-    <div className="pl-2">
+    <div className="pl-2 pb-8">
       <div className="flex items-center justify-between">
         <Link href="/">
           <h1 className="flex items-center ml-4 mt-6">

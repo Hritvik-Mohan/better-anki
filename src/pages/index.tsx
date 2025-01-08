@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <div className="py-6 px-[10%]">
+      <div className="py-6 px-[10%] xl:px-[20%]">
         <h1 className="pb-[2rem] font-semibold text-gray-800 text-[2.5rem] sm:text-[3rem] md:text-[5rem] xl:text-[8rem] 2xl:text[10rem]">
           Master Your Learning with Better{" "}
           <span className="bg-[rgba(77,110,213,1)] text-white">Anki</span>

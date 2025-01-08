@@ -5,7 +5,7 @@ import { FcMindMap } from "react-icons/fc";
 export default function Navbar() {
   return (
     <div>
-      <div className="flex items-center justify-between border-b-2 border-[rgba(243,243,243,1)] py-6 px-[10%]">
+      <div className="flex items-center justify-between border-b-2 border-[rgba(243,243,243,1)] py-6 px-[10%] xl:px-[20%]">
         <div>
           <h1 className="flex items-center text-[1.5rem]">
             <span className="font-bold">Better</span>
