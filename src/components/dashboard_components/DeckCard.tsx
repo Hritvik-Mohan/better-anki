@@ -41,7 +41,7 @@ const DeckCard: React.FC<DeckCardProps> = ({
         className={
           isGridLayout
             ? "flex flex-wrap border border-solid hover:bg-[#fbfcff] p-5 rounded-lg justify-between text-gray-600 h-full w-full overflow-auto"
-            : "flex border border-solid hover:bg-[#edf1ff] p-4 rounded-lg items-center justify-between text-gray-600"
+            : "border border-solid hover:bg-[#edf1ff] p-4 rounded-lg items-center justify-between text-gray-600"
         }
       >
         <div className={isGridLayout ? "" : "w-full pl-4 pt-4 pb-4"}>
