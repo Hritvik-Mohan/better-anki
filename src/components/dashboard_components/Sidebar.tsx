@@ -41,35 +41,35 @@ export default function Sidebar({ onChangeSection }: SidebarProps) {
         </div>
         <div className="">
           <div className="flex flex-col gap-4">
-            <button
-              onClick={() => onChangeSection("myDashboard")}
-              className="flex items-center gap-1 hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
-            >
-              <BiSolidDashboard />
-              Dashboard
-            </button>
-            <button
-              onClick={() => onChangeSection("myDecks")}
-              className="flex items-center gap-1 hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
-            >
-              <PiCardsThreeFill />
-              My Decks
-            </button>
-            <button
-              onClick={() => onChangeSection("mySettings")}
-              className="flex items-center gap-1 hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
-            >
-              <IoMdSettings />
-              Settings
-            </button>
-            <button
-              className="hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
-            >
-              <Link href="/login" className="flex items-center gap-1">
-                <TbLogout2 />
-                Logout
-              </Link>
-            </button>
+                <button
+                  onClick={() => onChangeSection("myDashboard")}
+                  className="flex items-center gap-1 hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
+                >
+                  <BiSolidDashboard />
+                  Dashboard
+                </button>
+                <button
+                  onClick={() => onChangeSection("myDecks")}
+                  className="flex items-center gap-1 hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
+                >
+                  <PiCardsThreeFill />
+                  My Decks
+                </button>
+                <button
+                  onClick={() => onChangeSection("mySettings")}
+                  className="flex items-center gap-1 hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
+                >
+                  <IoMdSettings />
+                  Settings
+                </button>
+                <button
+                  className="hover:bg-[rgba(233,233,233,1)] mx-4 px-4 py-2 rounded-lg text-left font-medium"
+                >
+                  <Link href="/login" className="flex items-center gap-1">
+                    <TbLogout2 />
+                    Logout
+                  </Link>
+                </button>
           </div>
         </div>
       </div>

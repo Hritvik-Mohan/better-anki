@@ -1,3 +1,5 @@
+"use client";
+
 import Main from "@/components/dashboard_components/Main";
 import Navbar from "@/components/dashboard_components/Navbar";
 import Settings from "@/components/dashboard_components/Settings";
@@ -6,7 +8,11 @@ import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
 import React, { JSX, useState, useEffect } from "react";
 import MyDecks from "@/components/dashboard_components/MyDecks";
 import { useLayoutContext } from "@/context/LayoutContext";
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import { CgMenuGridO } from "react-icons/cg";
 import { Card } from "@/components/ui/card";
 import useIsMobile from "@/utils/useIsMobile";
@@ -16,8 +22,10 @@ export default function Dashboard() {
 
   const [activeSection, setActiveSection] = useState<SectionKey>("myDashboard");
   const [isLoaded, setIsLoaded] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const isMobile = useIsMobile();
+  const { isGridLayout } = useLayoutContext();
 
   const sections: Record<SectionKey, JSX.Element> = {
     myDashboard: <Main />,
@@ -25,39 +33,30 @@ export default function Dashboard() {
     mySettings: <Settings />,
   };
 
-  const { isGridLayout } = useLayoutContext();
-
   // Trigger the transition when the component mounts
   useEffect(() => {
     const timeout = setTimeout(() => setIsLoaded(true), 50); // Delay for smoother effect
     return () => clearTimeout(timeout); // Cleanup timeout on unmount
   }, []);
 
-  // if (isDesktop) {
-  //   return (
-  //     <Dialog open={open} onOpenChange={setOpen}>
-  //       <DialogTrigger asChild>
-  //         <Button variant="outline">Edit Profile</Button>
-  //       </DialogTrigger>
-  //       <DialogContent className="sm:max-w-[425px]">
-  //         asd
-  //       </DialogContent>
-  //     </Dialog>
-  //   )
-  // }
-
-
   return (
     <>
       {isMobile ? (
         <div className="relative">
           <Navbar />
-          <Drawer>
+          <Drawer open={open} onOpenChange={setOpen}>
             <DrawerTrigger asChild className="">
-              <Card className="fixed right-8 bottom-8 p-4 bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] rounded-full"><CgMenuGridO size={28}/></Card>
+              <Card className="fixed right-8 bottom-8 p-4 bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] rounded-full">
+                <CgMenuGridO size={28} />
+              </Card>
             </DrawerTrigger>
-            <DrawerContent>
-            <Sidebar onChangeSection={setActiveSection} />
+            <DrawerContent className="h-[70vh] p-4">
+                <Sidebar
+                  onChangeSection={(section) => {
+                    setActiveSection(section);
+                    setOpen(false);
+                  }}
+                />
             </DrawerContent>
           </Drawer>
           {sections[activeSection]}
