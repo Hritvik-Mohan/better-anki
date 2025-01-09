@@ -1,40 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Better Anki
+Better Anki is an enhanced version of Anki, a flashcard-based learning application. This project introduces additional features and improvements to make studying more efficient and engaging.
 
-## Getting Started
+## Features
 
-First, run the development server:
+### Modern UI Components
+* **Responsive Drawer Navigation**: Mobile-friendly navigation system with smooth transitions
+* **Resizable Panels**: Customizable layout with draggable panels for desktop view
+* **Clean, Minimalist Design**: Enhanced visual design for a distraction-free learning experience
+
+### Study Tools
+* **Custom Heatmap Component**: Visualize your study patterns over time
+* **Progress Tracking**: Detailed insights into your learning journey
+* **Advanced Statistics**: Comprehensive analytics for better study planning
+
+### Card Management
+* **Intuitive Deck Organization**: Easy-to-use interface for managing flashcard decks
+* **Smart Filtering**: Advanced search and filter capabilities
+* **Customizable Cards**: Flexible card templates and formatting options
+
+### Dashboard
+* **Personal Statistics**: Track your daily, weekly, and monthly progress
+* **Study Patterns**: Analyze your learning habits and optimize your schedule
+* **Performance Metrics**: Detailed insights into retention rates and study efficiency
+
+## Technology Stack
+
+- **Frontend**: Next.js, React, TypeScript
+- **UI Components**: shadcn/ui, Tailwind CSS
+- **State Management**: React Context
+- **Responsive Design**: Mobile-first approach
+
+## Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/your-username/better-anki.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd better-anki
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+5. Build for production:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm run build
+```
+### Development Setup
+Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- Git
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Contributing
+Contributions are welcome! Here's how you can help:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Fork the repository
+2. Create a new branch:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+git checkout -b feature/amazing-feature
+```
+3. Make your changes
+4. Commit with descriptive messages:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git commit -m "Add amazing feature"
+```
+5. Push to your branch:
 
-## Learn More
+```bash
+git push origin feature/amazing-feature
+```
+6. Open a Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+### Contribution Guidelines
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- Follow the existing code style and conventions
+- Write clear commit messages
+- Update documentation as needed
+- Add tests for new features
+- Ensure all tests pass before submitting PR
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Deploy on Vercel
+### Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Inspired by the original Anki flashcard system
+- Built with shadcn/ui components
+- Thanks to all contributors who have helped shape Better Anki
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+### Support
+For support, please:
+
+- Open an issue on GitHub
+- Join our community discussions
+- Check out the documentation
+
+
+Made with ❤️ by the Better Anki Team
