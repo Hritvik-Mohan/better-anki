@@ -1,6 +1,9 @@
 # Better Anki
 Better Anki is an enhanced version of Anki, a flashcard-based learning application. This project introduces additional features and improvements to make studying more efficient and engaging.
 
+<img width="1430" alt="image" src="https://github.com/user-attachments/assets/14706e14-c633-4e14-8de2-753dfa4c3434" />
+
+
 ## Features
 
 ### Modern UI Components
