@@ -34,7 +34,7 @@ Better Anki is an enhanced version of Anki, a flashcard-based learning applicati
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/better-anki.git
+git clone https://github.com/Hritvik-Mohan/better-anki
 ```
 
 2. Navigate to the project directory:
