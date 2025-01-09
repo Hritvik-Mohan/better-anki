@@ -18,7 +18,7 @@ const DeckModal: React.FC<DeckModalProps> = ({
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Trigger the animation after the component is mounted
+    // Trigger fade-in animation
     setTimeout(() => setIsVisible(true), 10);
 
     // Handle clicks outside the modal
@@ -33,11 +33,11 @@ const DeckModal: React.FC<DeckModalProps> = ({
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  });
+  }, []);
 
   const handleClose = () => {
-    setIsVisible(false); // Start the fade-out animation
-    setTimeout(closeModal, 300); // Close the modal after the animation duration
+    setIsVisible(false); // Start fade-out animation
+    setTimeout(closeModal, 300); // Delay removal until animation completes
   };
 
   return (
@@ -58,7 +58,7 @@ const DeckModal: React.FC<DeckModalProps> = ({
             onClick={handleClose}
             className="text-gray-500 hover:text-gray-700"
           >
-            <IoCloseCircleOutline size='2rem'/>
+            <IoCloseCircleOutline size="2rem" />
           </button>
         </div>
         <p>
