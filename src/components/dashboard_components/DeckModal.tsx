@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 interface DeckModalProps {
-  closeModal: () => void; // Function to close the modal
-  title: string; // Deck title
-  description: string; // Deck description
-  cardCount: number; // Number of cards
+  closeModal: () => void;
+  title: string;
+  description: string;
+  cardCount: number;
 }
 
 const DeckModal: React.FC<DeckModalProps> = ({
@@ -16,6 +16,11 @@ const DeckModal: React.FC<DeckModalProps> = ({
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
+
+  const handleClose = useCallback(() => {
+    setIsVisible(false);
+    setTimeout(closeModal, 300);
+  }, [closeModal]);
 
   useEffect(() => {
     // Trigger fade-in animation
@@ -33,12 +38,7 @@ const DeckModal: React.FC<DeckModalProps> = ({
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const handleClose = () => {
-    setIsVisible(false); // Start fade-out animation
-    setTimeout(closeModal, 300); // Delay removal until animation completes
-  };
+  }, [handleClose]);
 
   return (
     <div
