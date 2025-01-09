@@ -52,12 +52,10 @@ export default function Navbar() {
         )}
         <div>
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <button className="flex items-center justify-center min-w-[6rem] max-w-[6rem] bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] w-[15%] p-4 rounded-lg font-semibold">
+              <DropdownMenuTrigger className="flex items-center justify-center min-w-[6rem] max-w-[6rem] bg-[rgba(218,224,248,1)] hover:bg-[rgb(201,211,252)] text-[rgba(77,110,213,1)] w-[15%] p-4 rounded-lg font-semibold">
                 <IoIosAdd size="2rem" />
                 New
-              </button>
-            </DropdownMenuTrigger>
+              </DropdownMenuTrigger>
             <DropdownMenuContent>
               {/* <DropdownMenuLabel className="text-[16px]">My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator/> */}
