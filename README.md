@@ -115,4 +115,6 @@ For support, please:
 - Check out the documentation
 
 
-Made with ❤️ by the Better Anki Team
+---
+
+<p align="center">Made with ❤️ by the <strong>Better Anki Team</strong></p>
