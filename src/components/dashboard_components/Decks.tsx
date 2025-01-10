@@ -10,7 +10,7 @@ export default function Decks({}) {
     <div
       className={`transition-all duration-500 ease-in-out ${
         isGridLayout
-          ? "grid grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))] gap-8"
+          ? "grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-8"
           : "flex flex-col gap-4"
       }`}
     >

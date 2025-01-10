@@ -6,11 +6,11 @@ export default function Home() {
     <div>
       <Navbar/>
       <div className="py-6 px-[10%] xl:px-[20%]">
-        <h1 className="pb-[2rem] font-semibold text-gray-800 text-[2.5rem] sm:text-[3rem] md:text-[5rem] xl:text-[8rem] 2xl:text[10rem]">
+        <h1 className="pb-[2rem] font-semibold text-gray-800 text-[2rem] sm:text-[2.5rem] md:text-[4rem] xl:text-[6rem]">
           Master Your Learning with Better{" "}
           <span className="bg-[rgba(77,110,213,1)] text-white">Anki</span>
         </h1>
-        <p className="font-normal text-gray-800 text-[1rem] sm:text-[1.5rem] md:text-[3rem] xl:text-[6rem] 2xl:text[8rem]">
+        <p className="font-normal text-gray-800 text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] xl:text-[2rem]">
           An enhanced flashcard experience designed to{" "}
           <span className="bg-yellow-400 text-white">supercharge</span> your{" "}
           <span className="bg-orange-500 text-white">memory</span>{" "}
@@ -20,7 +20,7 @@ export default function Home() {
         <Link href="/dashboard">
           <button
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-semibold rounded-lg text-[1rem] xl:text[1.5rem] 2xl:text-[2rem] px-5 py-2.5 my-[2rem] dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-semibold rounded-lg text-[1.1rem] xl:text[1.2rem] px-5 py-2.5 my-[2rem] dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             Get Started for Free
           </button>
